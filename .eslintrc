@@ -1,7 +1,15 @@
 {
   "parser": "babel-eslint",
   "extends": "airbnb-base",
+  "env": {
+    "jasmine": true,
+    "jest": true
+  },
   "rules": {
-    "func-names": "off"
+    "func-names": "off",
+    "import/imports-first": "off",
+    "import/no-extraneous-dependencies": ["error", {
+      "devDependencies": true
+    }]
   }
 }
