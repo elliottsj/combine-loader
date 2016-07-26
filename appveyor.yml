@@ -1,0 +1,21 @@
+environment:
+  matrix:
+    - nodejs_version: "6"
+    - nodejs_version: "5"
+    - nodejs_version: "4"
+
+cache:
+  - node_modules
+
+install:
+  - ps: Install-Product node $env:nodejs_version
+  - npm prune
+  - npm install
+
+test_script:
+  - node --version
+  - npm --version
+  - npm test
+
+# Disable MSBuild
+build: off
