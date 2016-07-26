@@ -1,6 +1,7 @@
 # combine-loader
 [![npm version](https://img.shields.io/npm/v/combine-loader.svg)](https://www.npmjs.com/package/combine-loader)
 [![Travis CI Build Status](https://travis-ci.org/elliottsj/combine-loader.svg?branch=master)](https://travis-ci.org/elliottsj/combine-loader)
+[![Appveyor Build status](https://ci.appveyor.com/api/projects/status/i2aljhr7inuh9wrf/branch/master?svg=true)](https://ci.appveyor.com/project/elliottsj/combine-loader/branch/master)
 
 webpack loader to combine results from multiple loaders into one object
 
