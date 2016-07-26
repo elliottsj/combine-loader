@@ -1,7 +1,7 @@
 {
   "name": "combine-loader",
   "version": "0.1.0",
-  "description": "Webpack loader to combine results from multiple loaders into one object",
+  "description": "webpack loader to combine results from multiple loaders into one object",
   "main": "lib/index.js",
   "scripts": {
     "build": "babel src --out-dir lib",

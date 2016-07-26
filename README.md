@@ -1,7 +1,7 @@
 # combine-loader
 [![npm version](https://img.shields.io/npm/v/combine-loader.svg)](https://www.npmjs.com/package/combine-loader)
 
-Webpack loader to combine results from multiple loaders into one object
+webpack loader to combine results from multiple loaders into one object
 
 ## Installation
 
