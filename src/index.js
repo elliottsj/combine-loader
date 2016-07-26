@@ -9,7 +9,8 @@ module.exports.pitch = function (remainingRequest) {
     const loader = Array.isArray(loaders[key])
       ? loaders[key].join('!')
       : loaders[key];
-    return `"${key}": require("-!${loader}!${remainingRequest}")`;
+    const request = loaderUtils.stringifyRequest(this, `-!${loader}!${remainingRequest}`);
+    return `"${key}": require(${request})`;
   });
   return `module.exports = {${keysValues.join(',')}}`;
 };
