@@ -1,5 +1,3 @@
-jest.unmock('../webpack.config');
-
 import path from 'path';
 import webpack from 'webpack';
 import config from '../webpack.config';

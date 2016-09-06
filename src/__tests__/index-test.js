@@ -1,5 +1,3 @@
-jest.unmock('..');
-
 import * as combineLoader from '..';
 
 describe('combine-loader', () => {
