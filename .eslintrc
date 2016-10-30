@@ -6,6 +6,7 @@
     "jest": true
   },
   "rules": {
+    "arrow-parens": "off",
     "func-names": "off",
     "import/imports-first": "off",
     "import/no-extraneous-dependencies": ["error", {
