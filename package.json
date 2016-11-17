@@ -40,7 +40,7 @@
     "eslint-plugin-import": "^1.13.0",
     "front-matter-loader": "^0.1.2",
     "html-loader": "^0.4.3",
-    "jest-cli": "^16.0.1",
+    "jest-cli": "^17.0.3",
     "json-loader": "^0.5.4",
     "markdown-it-loader": "^0.3.2",
     "raw-loader": "^0.5.1",
