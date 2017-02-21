@@ -27,7 +27,7 @@
   },
   "homepage": "https://github.com/elliottsj/combine-loader#readme",
   "dependencies": {
-    "loader-utils": "^0.2.11"
+    "loader-utils": "^1.0.2"
   },
   "devDependencies": {
     "babel-cli": "^6.3.17",
