@@ -4,17 +4,18 @@ environment:
     - nodejs_version: "4"
 
 cache:
-  - node_modules
+  - "%LOCALAPPDATA%/Yarn"
 
 install:
   - ps: Install-Product node $env:nodejs_version
-  - npm prune
-  - npm install
+  - choco install yarn
+  - refreshenv
+  - yarn
 
 test_script:
   - node --version
-  - npm --version
-  - npm test
+  - yarn --version
+  - yarn test
 
 # Disable MSBuild
 build: off
