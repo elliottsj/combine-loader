@@ -1,7 +1,7 @@
 import loaderUtils from 'loader-utils';
 
-module.exports = function () {};
-module.exports.pitch = function (remainingRequest) {
+module.exports = function() {};
+module.exports.pitch = function(remainingRequest) {
   this.cacheable();
   const loaders = loaderUtils.parseQuery(this.query);
 
@@ -9,7 +9,10 @@ module.exports.pitch = function (remainingRequest) {
     const loader = Array.isArray(loaders[key])
       ? loaders[key].join('!')
       : loaders[key];
-    const request = loaderUtils.stringifyRequest(this, `-!${loader}!${remainingRequest}`);
+    const request = loaderUtils.stringifyRequest(
+      this,
+      `-!${loader}!${remainingRequest}`,
+    );
     return `"${key}": require(${request})`;
   });
   return `module.exports = {${keysValues.join(',')}}`;
