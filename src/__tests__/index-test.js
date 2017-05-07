@@ -7,7 +7,11 @@ describe('combine-loader', () => {
       query: `?${JSON.stringify({
         raw: 'raw-loader',
         frontmatter: ['json-loader', 'front-matter-loader?onlyAttributes'],
-        content: ['html-loader', 'markdown-it-loader', 'front-matter-loader?onlyBody'],
+        content: [
+          'html-loader',
+          'markdown-it-loader',
+          'front-matter-loader?onlyBody',
+        ],
       })}`,
     };
     const result = combineLoader.pitch.call(context, './path/to/example.md');
@@ -16,15 +20,15 @@ describe('combine-loader', () => {
     expect(result).toBe(
       'module.exports = {' +
         '"raw": require(' +
-          '"-!raw-loader!./path/to/example.md"' +
+        '"-!raw-loader!./path/to/example.md"' +
         '),' +
         '"frontmatter": require(' +
-          '"-!json-loader!front-matter-loader?onlyAttributes!./path/to/example.md"' +
+        '"-!json-loader!front-matter-loader?onlyAttributes!./path/to/example.md"' +
         '),' +
         '"content": require(' +
-          '"-!html-loader!markdown-it-loader!front-matter-loader?onlyBody!./path/to/example.md"' +
+        '"-!html-loader!markdown-it-loader!front-matter-loader?onlyBody!./path/to/example.md"' +
         ')' +
-      '}'
+        '}',
     );
   });
 });

@@ -17,7 +17,11 @@ module.exports = {
         loader: `${combineLoader}?${JSON.stringify({
           raw: 'raw-loader',
           frontmatter: ['json-loader', 'front-matter-loader?onlyAttributes'],
-          content: ['html-loader', 'markdown-it-loader', 'front-matter-loader?onlyBody'],
+          content: [
+            'html-loader',
+            'markdown-it-loader',
+            'front-matter-loader?onlyBody',
+          ],
         })}`,
       },
     ],
