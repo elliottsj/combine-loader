@@ -20,14 +20,19 @@ module.exports = {
   // ...
   module: {
     // ...
-    loaders: [
+    rules: [
       {
         test: /\.md$/,
-        loader: 'combine-loader?' + JSON.stringify({
+        loader: 'combine-loader',
+        options: {
           raw: 'raw-loader',
           frontmatter: ['json-loader', 'front-matter-loader?onlyAttributes'],
-          content: ['html-loader', 'markdown-it-loader', 'front-matter-loader?onlyBody']
-        })
+          content: [
+            'html-loader',
+            'markdown-it-loader',
+            'front-matter-loader?onlyBody',
+          ],
+        },
       }
     ]
   }
@@ -44,8 +49,10 @@ const example = require('./example.md')
 
 ```js
 const example = {
-  raw: require('!!raw-loader!./example.md'),
-  frontmatter: require('!!json-loader!front-matter-loader?onlyAttributes!./example.md'),
-  content: require('!!html-loader!markdown-it-loader!front-matter-loader?onlyBody!./example.md')
+  raw: require('-!raw-loader!./example.md'),
+  frontmatter: require('-!json-loader!front-matter-loader?onlyAttributes!./example.md'),
+  content: require('-!html-loader!markdown-it-loader!front-matter-loader?onlyBody!./example.md')
 }
 ```
+
+[_NOTE: `-!` is prepended to ignore other `preLoaders` and `loaders` configured by webpack_](https://webpack.github.io/docs/loaders.html#loader-order)

@@ -3,7 +3,7 @@ import loaderUtils from 'loader-utils';
 module.exports = function() {};
 module.exports.pitch = function(remainingRequest) {
   this.cacheable();
-  const loaders = loaderUtils.parseQuery(this.query);
+  const loaders = loaderUtils.getOptions(this);
 
   const keysValues = Object.keys(loaders).map(key => {
     const loader = Array.isArray(loaders[key])
