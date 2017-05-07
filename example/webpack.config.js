@@ -11,10 +11,11 @@ module.exports = {
     pathinfo: true,
   },
   module: {
-    loaders: [
+    rules: [
       {
         test: /\.md$/,
-        loader: `${combineLoader}?${JSON.stringify({
+        loader: combineLoader,
+        options: {
           raw: 'raw-loader',
           frontmatter: ['json-loader', 'front-matter-loader?onlyAttributes'],
           content: [
@@ -22,7 +23,7 @@ module.exports = {
             'markdown-it-loader',
             'front-matter-loader?onlyBody',
           ],
-        })}`,
+        },
       },
     ],
   },
