@@ -8,8 +8,6 @@ cache:
 
 install:
   - ps: Install-Product node $env:nodejs_version
-  - choco install yarn
-  - refreshenv
   - yarn
 
 test_script:
