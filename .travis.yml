@@ -2,15 +2,15 @@
 sudo: required
 dist: trusty
 
+env:
+  global:
+    secure: mRPwcIZlohTekqKBN1IyVDbaWmCHKFMjcxbDd3Yn1Z4GaLr99W4h8IW+wf/l7osk4DfL9UgUHAodyHow4Xor5NLmK4AHai65DTilYShYrKZ7L/Emj+IOf0tPDO08Rvdw1qekY/sdWgeJF691TO7iNkuON0+zjs8jDedEvwkZ1savycJnx+N5kHPrkg4r+F6YDHygOsC8fL0+5MeVi+EPUQmg5MjopL1pyQFumbNOTCWr6bJ26QEQKSZENtEg/bYGXPV7z78CnBCKesIVu3QL8+TpNm+02BFVqAUNtRIsf4FP1VZWnh9DlDOi+Aog3OvUb2zlZqq3aM3Ws4TXrS+hmnHyjPePPr1A/rYd413Ho2YPNDzfBm1XS+ytn5eG0kURKSlrypiKSpdMbeF+8As+Peym1nWmTLsPKOz/+urCCrxT9PQv++i8YS5Vtlk8PK8l40tS9X/KHZLgu9xS34bpfdNnkuMwI0Mqtg7T+5QR6p2AC4uIiiYOqv99BMd7nc0SR7c69OaPhrUJz5sRcrQMQrpuqvhN7pRXRorGwrUVjA9tRUJawrH2fQdHk3dgwEIwgKutkTJBYByN7vzzFMP4VTsIAkRKUw9m9yZ0NicuRq+SHAsOi0gGeC38awIQwmNLZq65vwH+4esEr6YOja0XmYdecf69W32VlM5B36lV8g4=
+
 language: node_js
 node_js:
   - '4'
   - '6'
   - 'stable'
-cache:
-  directories:
-  - $HOME/.yarn-cache
-before_install:
-  - npm install --global yarn
-install:
-  - yarn
+cache: yarn
+after_success:
+  - ./yarn.sh
