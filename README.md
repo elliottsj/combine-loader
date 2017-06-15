@@ -1,5 +1,7 @@
 # combine-loader
+
 [![npm version](https://img.shields.io/npm/v/combine-loader.svg)](https://www.npmjs.com/package/combine-loader)
+[![Greenkeeper badge](https://badges.greenkeeper.io/elliottsj/combine-loader.svg)](https://greenkeeper.io/)
 [![Travis CI Build Status](https://travis-ci.org/elliottsj/combine-loader.svg?branch=master)](https://travis-ci.org/elliottsj/combine-loader)
 [![Appveyor Build status](https://ci.appveyor.com/api/projects/status/i2aljhr7inuh9wrf/branch/master?svg=true)](https://ci.appveyor.com/project/elliottsj/combine-loader/branch/master)
 
