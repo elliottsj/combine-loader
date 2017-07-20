@@ -1,6 +1,6 @@
 {
   "name": "combine-loader",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "webpack loader to combine results from multiple loaders into one object",
   "main": "lib/index.js",
   "scripts": {
