@@ -11,7 +11,6 @@ describe('example', () => {
           stats.toJson().assetsByChunkName.main,
         );
         expect(require(bundlePath)).toEqual({
-          // eslint-disable-line global-require
           raw: '---\ntitle: Example\n---\n\nSome markdown\n',
           frontmatter: { title: 'Example' },
           content: '<p>Some markdown</p>\n',
