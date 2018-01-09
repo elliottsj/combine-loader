@@ -40,7 +40,7 @@
     "eslint": "^4.2.0",
     "eslint-plugin-prettier": "^2.1.2",
     "front-matter-loader": "^0.2.0",
-    "html-loader": "^0.4.3",
+    "html-loader": "^0.5.0",
     "jest": "^20.0.4",
     "json-loader": "^0.5.4",
     "markdown-it-loader": "^0.6.0",
