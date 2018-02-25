@@ -46,7 +46,7 @@
     "markdown-it-loader": "^0.6.0",
     "prettier": "^1.5.3",
     "raw-loader": "^0.5.1",
-    "webpack": "^3.0.0"
+    "webpack": "^4.0.0"
   },
   "jest": {
     "roots": [
