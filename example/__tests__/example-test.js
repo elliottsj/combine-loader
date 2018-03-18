@@ -3,6 +3,7 @@ import webpack from 'webpack';
 import config from '../webpack.config';
 
 describe('example', () => {
+  jest.setTimeout(10000); // 10 second timeout
   it('combines loader results into one object', () =>
     new Promise(resolve => {
       webpack(config, (error, stats) => {
