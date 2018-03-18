@@ -53,6 +53,7 @@
     "roots": [
       "<rootDir>/example",
       "<rootDir>/src"
-    ]
+    ],
+    "testEnvironment": "node"
   }
 }
