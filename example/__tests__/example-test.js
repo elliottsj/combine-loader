@@ -2,8 +2,9 @@ import path from 'path';
 import webpack from 'webpack';
 import config from '../webpack.config';
 
+jest.setTimeout(10000); // 10 second timeout
+
 describe('example', () => {
-  jest.setTimeout(10000); // 10 second timeout
   it('combines loader results into one object', () =>
     new Promise(resolve => {
       webpack(config, (error, stats) => {
