@@ -8,6 +8,12 @@ describe('example', () => {
   it('combines loader results into one object', () =>
     new Promise(resolve => {
       webpack(config, (error, stats) => {
+        if (error) {
+          throw error;
+        }
+        if (stats.hasErrors()) {
+          throw stats.toJson().errors[0];
+        }
         const bundlePath = path.resolve(
           stats.compilation.compiler.outputPath,
           stats.toJson().assetsByChunkName.main,
