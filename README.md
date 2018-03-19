@@ -15,7 +15,7 @@ npm install combine-loader
 
 ## Usage
 
-In your webpack configuration, pass an object as the query string for `combine-loader`. Each key-value pair corresponds to the same key in the exported object, using the provided loader string value to load the file. For example:
+In your webpack configuration, pass an object as the options for `combine-loader`. Each key-value pair corresponds to the same key in the exported object, using the provided loader string value to load the file. For example:
 
 ```js
 module.exports = {
@@ -51,10 +51,10 @@ const example = require('./example.md')
 
 ```js
 const example = {
-  raw: require('-!raw-loader!./example.md'),
-  frontmatter: require('-!json-loader!front-matter-loader?onlyAttributes!./example.md'),
-  content: require('-!html-loader!markdown-it-loader!front-matter-loader?onlyBody!./example.md')
+  raw: require('!raw-loader!./example.md'),
+  frontmatter: require('!json-loader!front-matter-loader?onlyAttributes!./example.md'),
+  content: require('!html-loader!markdown-it-loader!front-matter-loader?onlyBody!./example.md')
 }
 ```
 
-[_NOTE: `-!` is prepended to ignore other `preLoaders` and `loaders` configured by webpack_](https://webpack.github.io/docs/loaders.html#loader-order)
+[_NOTE: `!` is prepended to override loaders in webpack's config_](https://webpack.js.org/concepts/loaders/#inline)
