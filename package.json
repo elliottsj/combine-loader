@@ -1,6 +1,6 @@
 {
   "name": "combine-loader",
-  "version": "0.3.1",
+  "version": "0.4.0",
   "description": "webpack loader to combine results from multiple loaders into one object",
   "main": "lib/index.js",
   "scripts": {
@@ -41,8 +41,8 @@
     "eslint": "^4.2.0",
     "eslint-plugin-prettier": "^2.1.2",
     "front-matter-loader": "^0.2.0",
-    "html-loader": "^0.5.0",
     "highlight.js": "^9.11.0",
+    "html-loader": "^0.5.0",
     "jest": "^22.4.2",
     "json-loader": "^0.5.4",
     "markdown-it": "^8.3.1",
