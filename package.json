@@ -39,7 +39,7 @@
     "babel-preset-stage-1": "^6.3.13",
     "del-cli": "^1.1.0",
     "eslint": "^4.2.0",
-    "eslint-plugin-prettier": "^2.1.2",
+    "eslint-plugin-prettier": "^3.0.0",
     "front-matter-loader": "^0.2.0",
     "highlight.js": "^9.11.0",
     "html-loader": "^0.5.0",
