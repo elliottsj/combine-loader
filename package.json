@@ -45,7 +45,7 @@
     "html-loader": "^0.5.0",
     "jest": "^22.4.2",
     "json-loader": "^0.5.4",
-    "markdown-it": "^8.3.1",
+    "markdown-it": "^9.0.1",
     "markdown-it-loader": "elliottsj/markdown-it-loader#loader-options",
     "prettier": "^1.5.3",
     "raw-loader": "^0.5.1",
