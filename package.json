@@ -47,7 +47,7 @@
     "json-loader": "^0.5.4",
     "markdown-it": "^8.3.1",
     "markdown-it-loader": "elliottsj/markdown-it-loader#loader-options",
-    "prettier": "^1.5.3",
+    "prettier": "^2.0.0",
     "raw-loader": "^0.5.1",
     "webpack": "^4.1.1"
   },
