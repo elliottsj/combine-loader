@@ -2187,20 +2187,20 @@ from2@^2.1.0:
     inherits "^2.0.1"
     readable-stream "^2.0.0"
 
-front-matter-loader@0.2.0:
-  version "0.2.0"
-  resolved "https://registry.npmjs.org/front-matter-loader/-/front-matter-loader-0.2.0.tgz#3d5a34e5498672d78cb639bda45f8b0c360e63df"
-  integrity sha512-CuANHuZilsWlsDRoBbjBSr8eWz8TZ/JHuRcbKaYD9W57XvNMvDF8s0mvgYT99Cyzn7oRZlA74b4+BUJ+OCLltw==
+front-matter-loader@1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/front-matter-loader/-/front-matter-loader-1.0.0.tgz#66e3cfba147af7830987f01826048e0b07ed30d3"
+  integrity sha512-rJmDWvau5kQiEQX2pyEmeYSIb0kNUCory51MmvHf6LM36DIh6S9UabxIZOLDtqh1Hhfay93oCURpSPyPOu96rQ==
   dependencies:
-    front-matter "^2.0.2"
-    loader-utils "^1.1.0"
+    front-matter "^3.1.0"
+    loader-utils "^2.0.0"
 
-front-matter@^2.0.2:
-  version "2.3.0"
-  resolved "https://registry.npmjs.org/front-matter/-/front-matter-2.3.0.tgz#7203af896ce357ee04e2aa45169ea91ed7f67504"
-  integrity sha1-cgOviWzjV+4E4qpFFp6pHtf2dQQ=
+front-matter@^3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/front-matter/-/front-matter-3.1.0.tgz#a0b758c3c6c39ce43e107dd0909a57d42964c2de"
+  integrity sha512-RFEK8N6waWTdwBZOPNEtvwMjZ/hUfpwXkYUYkmmOhQGdhSulXhWrFwiUhdhkduLDiIwbROl/faF1X/PC/GGRMw==
   dependencies:
-    js-yaml "^3.10.0"
+    js-yaml "^3.13.1"
 
 fs-write-stream-atomic@^1.0.8:
   version "1.0.10"
@@ -3182,7 +3182,7 @@ js-tokens@^4.0.0:
   resolved "https://registry.npmjs.org/js-tokens/-/js-tokens-4.0.0.tgz#19203fb59991df98e3a287050d4647cdeaf32499"
   integrity sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==
 
-js-yaml@^3.10.0, js-yaml@^3.13.1:
+js-yaml@^3.13.1:
   version "3.13.1"
   resolved "https://registry.npmjs.org/js-yaml/-/js-yaml-3.13.1.tgz#aff151b30bfdfa8e49e05da22e7415e9dfa37847"
   integrity sha512-YfbcO7jXDdyj0DGxYVSlSeQNHbD7XPWvrVWeVUujrQEoZzWJIRrCPoyk6kL6IAjAG2IolMK4T0hNUe0HOUs5Jw==
