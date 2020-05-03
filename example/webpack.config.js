@@ -16,13 +16,13 @@ module.exports = {
         test: /\.md$/,
         loader: combineLoader,
         options: {
-          raw: 'raw-loader',
-          frontmatter: ['json-loader', 'front-matter-loader?onlyAttributes'],
           content: [
             'html-loader',
             'markdown-it-loader',
             'front-matter-loader?onlyBody',
           ],
+          frontmatter: ['json-loader', 'front-matter-loader?onlyAttributes'],
+          raw: 'raw-loader',
         },
       },
     ],
