@@ -1,12 +1,12 @@
-import path from 'path';
-import webpack from 'webpack';
-import config from '../webpack.config';
+const path = require('path');
+const webpack = require('webpack');
+const config = require('../webpack.config');
 
 jest.setTimeout(10000); // 10 second timeout
 
 describe('example', () => {
   it('combines loader results into one object', () =>
-    new Promise(resolve => {
+    new Promise((resolve) => {
       webpack(config, (error, stats) => {
         if (error) {
           throw error;
@@ -16,13 +16,18 @@ describe('example', () => {
         }
         const bundlePath = path.resolve(
           stats.compilation.compiler.outputPath,
-          stats.toJson().assetsByChunkName.main,
+          stats.toJson().assetsByChunkName.main
         );
-        expect(require(bundlePath)).toEqual({
-          raw: '---\ntitle: Example\n---\n\nSome markdown\n',
-          frontmatter: { title: 'Example' },
-          content: '<p>Some markdown</p>\n',
-        });
+        expect(require(bundlePath).content).toEqual('<p>Some markdown</p> ');
+        expect(require(bundlePath).frontmatter).toEqual({ title: 'Example' });
+        expect(require(bundlePath).raw.default).toMatchInlineSnapshot(`
+          "---
+          title: Example
+          ---
+
+          Some markdown
+          "
+        `);
         resolve();
       });
     }));

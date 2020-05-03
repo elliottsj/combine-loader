@@ -1,8 +1,6 @@
 # combine-loader
 
 [![npm version](https://img.shields.io/npm/v/combine-loader.svg)](https://www.npmjs.com/package/combine-loader)
-[![Greenkeeper badge](https://badges.greenkeeper.io/elliottsj/combine-loader.svg)](https://greenkeeper.io/)
-[![Travis CI Build Status](https://travis-ci.org/elliottsj/combine-loader.svg?branch=master)](https://travis-ci.org/elliottsj/combine-loader)
 [![Appveyor Build status](https://ci.appveyor.com/api/projects/status/i2aljhr7inuh9wrf/branch/master?svg=true)](https://ci.appveyor.com/project/elliottsj/combine-loader/branch/master)
 
 webpack loader to combine results from multiple loaders into one object
@@ -35,16 +33,16 @@ module.exports = {
             'front-matter-loader?onlyBody',
           ],
         },
-      }
-    ]
-  }
-}
+      },
+    ],
+  },
+};
 ```
 
 In the above example, the final exported value for **.md** files is an object with keys `raw`, `frontmatter`, and `content`, with values loaded using the provided loaders. In other words, this...
 
 ```js
-const example = require('./example.md')
+const example = require('./example.md');
 ```
 
 ...is effectively equivalent to this:
@@ -53,8 +51,8 @@ const example = require('./example.md')
 const example = {
   raw: require('!raw-loader!./example.md'),
   frontmatter: require('!json-loader!front-matter-loader?onlyAttributes!./example.md'),
-  content: require('!html-loader!markdown-it-loader!front-matter-loader?onlyBody!./example.md')
-}
+  content: require('!html-loader!markdown-it-loader!front-matter-loader?onlyBody!./example.md'),
+};
 ```
 
 [_NOTE: `!` is prepended to override loaders in webpack's config_](https://webpack.js.org/concepts/loaders/#inline)

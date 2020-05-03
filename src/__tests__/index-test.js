@@ -1,4 +1,4 @@
-import * as combineLoader from '..';
+const combineLoader = require('..');
 
 describe('combine-loader', () => {
   it('returns the correct module content', () => {
@@ -28,7 +28,7 @@ describe('combine-loader', () => {
         '"content": require(' +
         '"-!html-loader!markdown-it-loader!front-matter-loader?onlyBody!./path/to/example.md"' +
         ')' +
-        '}',
+        '}'
     );
   });
 });

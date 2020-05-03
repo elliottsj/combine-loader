@@ -1,17 +1,17 @@
-import loaderUtils from 'loader-utils';
+const loaderUtils = require('loader-utils');
 
-module.exports = function() {};
-module.exports.pitch = function(remainingRequest) {
+module.exports = function () {};
+module.exports.pitch = function (remainingRequest) {
   this.cacheable();
   const loaders = loaderUtils.getOptions(this);
 
-  const keysValues = Object.keys(loaders).map(key => {
+  const keysValues = Object.keys(loaders).map((key) => {
     const loader = Array.isArray(loaders[key])
       ? loaders[key].join('!')
       : loaders[key];
     const request = loaderUtils.stringifyRequest(
       this,
-      `-!${loader}!${remainingRequest}`,
+      `-!${loader}!${remainingRequest}`
     );
     return `"${key}": require(${request})`;
   });
