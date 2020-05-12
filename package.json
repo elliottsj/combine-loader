@@ -31,7 +31,7 @@
   "devDependencies": {
     "del-cli": "3.0.0",
     "front-matter-loader": "1.0.0",
-    "highlight.js": "10.0.2",
+    "highlight.js": "10.0.3",
     "html-loader": "1.1.0",
     "jest": "26.0.1",
     "json-loader": "0.5.7",
