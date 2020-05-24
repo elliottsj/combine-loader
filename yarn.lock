@@ -2170,18 +2170,18 @@ from2@^2.1.0:
     inherits "^2.0.1"
     readable-stream "^2.0.0"
 
-front-matter-loader@1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/front-matter-loader/-/front-matter-loader-1.0.0.tgz#66e3cfba147af7830987f01826048e0b07ed30d3"
-  integrity sha512-rJmDWvau5kQiEQX2pyEmeYSIb0kNUCory51MmvHf6LM36DIh6S9UabxIZOLDtqh1Hhfay93oCURpSPyPOu96rQ==
+front-matter-loader@1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/front-matter-loader/-/front-matter-loader-1.1.0.tgz#c1dfe66f934c76c16c1c6d8055e733eea269bbde"
+  integrity sha512-q9vZVlVZ0uOezQYF/jLjDrygr22N0xRg/Epmd0/yQx6MvA7nMXHXtXDHTb8pj6AUYWcnWUeedOOUd77+rIaBoQ==
   dependencies:
-    front-matter "^3.1.0"
+    front-matter "^4.0.0"
     loader-utils "^2.0.0"
 
-front-matter@^3.1.0:
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/front-matter/-/front-matter-3.1.0.tgz#a0b758c3c6c39ce43e107dd0909a57d42964c2de"
-  integrity sha512-RFEK8N6waWTdwBZOPNEtvwMjZ/hUfpwXkYUYkmmOhQGdhSulXhWrFwiUhdhkduLDiIwbROl/faF1X/PC/GGRMw==
+front-matter@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/front-matter/-/front-matter-4.0.0.tgz#41c1d7267c082d28f14566366a32369ba6bd2a82"
+  integrity sha512-N8uzPf026Za9KqPT+oeZv99PszNbeDlgZhGpqbVQL9lYfbuy7RhvfIs/kKSTMEHv/QADltU0Dp78Q9uy3GwwEg==
   dependencies:
     js-yaml "^3.13.1"
 
