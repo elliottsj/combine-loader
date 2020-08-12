@@ -33,7 +33,7 @@
     "front-matter-loader": "1.1.0",
     "highlight.js": "10.1.1",
     "html-loader": "1.1.0",
-    "jest": "26.3.0",
+    "jest": "26.4.0",
     "json-loader": "0.5.7",
     "markdown-it": "11.0.0",
     "markdown-it-loader": "0.7.0",
