@@ -4,14 +4,14 @@ devDependencies:
   del-cli: 3.0.1
   front-matter-loader: 1.1.0
   highlight.js: 10.3.1
-  html-loader: 1.3.0_webpack@4.44.1
+  html-loader: 1.3.0_webpack@4.44.2
   jest: 26.6.1
   json-loader: 0.5.7
   markdown-it: 12.0.2
   markdown-it-loader: 0.7.0_0ec4a1fb47f77eae7a99dc70665d49da
   prettier: 2.1.1
-  raw-loader: 4.0.2_webpack@4.44.1
-  webpack: 4.44.1
+  raw-loader: 4.0.2_webpack@4.44.2
+  webpack: 4.44.2
 lockfileVersion: 5.2
 packages:
   /@babel/code-frame/7.10.4:
@@ -2544,13 +2544,13 @@ packages:
     dev: true
     resolution:
       integrity: sha512-H2iMtd0I4Mt5eYiapRdIDjp+XzelXQ0tFE4JS7YFwFevXXMmOp9myNrUvCg0D6ws8iqkRPBfKHgbwig1SmlLfg==
-  /html-loader/1.3.0_webpack@4.44.1:
+  /html-loader/1.3.0_webpack@4.44.2:
     dependencies:
       html-minifier-terser: 5.1.1
       htmlparser2: 4.1.0
       loader-utils: 2.0.0
       schema-utils: 2.7.1
-      webpack: 4.44.1
+      webpack: 4.44.2
     dev: true
     engines:
       node: '>= 10.13.0'
@@ -4448,11 +4448,11 @@ packages:
     dev: true
     resolution:
       integrity: sha512-87lcbR8+MhcWcUiQ+9e+Rwx8MyR2P7qnt15ynUlbm3TU/fjbgz4GsvfSUDTemtCCtVCqb4ZcEFlyPNTh9bBTLw==
-  /raw-loader/4.0.2_webpack@4.44.1:
+  /raw-loader/4.0.2_webpack@4.44.2:
     dependencies:
       loader-utils: 2.0.0
       schema-utils: 3.0.0
-      webpack: 4.44.1
+      webpack: 4.44.2
     dev: true
     engines:
       node: '>= 10.13.0'
@@ -5169,7 +5169,7 @@ packages:
       node: '>=8'
     resolution:
       integrity: sha512-un0FmiRUQNr5PJqy9kP7c40F5BOfpGlYTrxonDChEZB7pzZxRNp/bt+ymiy9/npwXya9KH99nJ/GXFIiUkYGFQ==
-  /terser-webpack-plugin/1.4.5_webpack@4.44.1:
+  /terser-webpack-plugin/1.4.5_webpack@4.44.2:
     dependencies:
       cacache: 12.0.4
       find-cache-dir: 2.1.0
@@ -5178,7 +5178,7 @@ packages:
       serialize-javascript: 4.0.0
       source-map: 0.6.1
       terser: 4.8.0
-      webpack: 4.44.1
+      webpack: 4.44.2
       webpack-sources: 1.4.3
       worker-farm: 1.7.0
     dev: true
@@ -5560,7 +5560,7 @@ packages:
     dev: true
     resolution:
       integrity: sha512-lgTS3Xhv1lCOKo7SA5TjKXMjpSM4sBjNV5+q2bqesbSPs5FjGmU6jjtBSkX9b4qW87vDIsCIlUPOEhbZrMdjeQ==
-  /webpack/4.44.1:
+  /webpack/4.44.2:
     dependencies:
       '@webassemblyjs/ast': 1.9.0
       '@webassemblyjs/helper-module-context': 1.9.0
@@ -5582,7 +5582,7 @@ packages:
       node-libs-browser: 2.2.1
       schema-utils: 1.0.0
       tapable: 1.1.3
-      terser-webpack-plugin: 1.4.5_webpack@4.44.1
+      terser-webpack-plugin: 1.4.5_webpack@4.44.2
       watchpack: 1.7.4
       webpack-sources: 1.4.3
     dev: true
@@ -5598,7 +5598,7 @@ packages:
       webpack-command:
         optional: true
     resolution:
-      integrity: sha512-4UOGAohv/VGUNQJstzEywwNxqX417FnjZgZJpJQegddzPmTvph37eBIRbRTfdySXzVtJXLJfbMN3mMYhM6GdmQ==
+      integrity: sha512-6KJVGlCxYdISyurpQ0IPTklv+DULv05rs2hseIXer6D7KrUicRDLFb4IUM1S6LUAKypPM/nSiVSuv8jHu1m3/Q==
   /whatwg-encoding/1.0.5:
     dependencies:
       iconv-lite: 0.4.24
@@ -5749,4 +5749,4 @@ specifiers:
   markdown-it-loader: 0.7.0
   prettier: 2.1.1
   raw-loader: 4.0.2
-  webpack: 4.44.1
+  webpack: 4.44.2
