@@ -1,20 +1,18 @@
 environment:
   matrix:
     - nodejs_version: '' # latest
+    - nodejs_version: '14'
     - nodejs_version: '12'
-    - nodejs_version: '10'
-
-cache:
-  - "%LOCALAPPDATA%\\Yarn"
 
 install:
   - ps: Install-Product node $env:nodejs_version
-  - yarn
+  - npm install --global pnpm@5.10.2
+  - pnpm install
 
 test_script:
   - node --version
-  - yarn --version
-  - yarn test
+  - pnpm --version
+  - pnpm test
 
 # Disable MSBuild
 build: off
