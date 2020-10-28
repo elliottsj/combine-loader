@@ -16,9 +16,12 @@ describe('example', () => {
         }
         const bundlePath = path.resolve(
           stats.compilation.compiler.outputPath,
-          stats.toJson().assetsByChunkName.main
+          stats.toJson().assetsByChunkName.main[0]
         );
-        expect(require(bundlePath).content).toEqual('<p>Some markdown</p> ');
+        expect(require(bundlePath).content).toMatchInlineSnapshot(`
+          "<p>Some markdown</p>
+          "
+        `);
         expect(require(bundlePath).frontmatter).toEqual({ title: 'Example' });
         expect(require(bundlePath).raw.default).toMatchInlineSnapshot(`
           "---

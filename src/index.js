@@ -3,7 +3,7 @@ const loaderUtils = require('loader-utils');
 module.exports = function () {};
 module.exports.pitch = function (remainingRequest) {
   this.cacheable();
-  const loaders = loaderUtils.getOptions(this);
+  const loaders = this.getOptions();
 
   const keysValues = Object.keys(loaders).map((key) => {
     const loader = Array.isArray(loaders[key])
