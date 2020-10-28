@@ -3,6 +3,7 @@ const path = require('path');
 const combineLoader = require.resolve('..');
 
 module.exports = {
+  mode: 'none',
   entry: path.resolve(__dirname, 'index.js'),
   output: {
     filename: 'bundle.js',
@@ -19,9 +20,12 @@ module.exports = {
           content: [
             'html-loader',
             'markdown-it-loader',
-            'front-matter-loader?onlyBody',
+            'front-matter-loader?{"onlyBody":true}',
           ],
-          frontmatter: ['json-loader', 'front-matter-loader?onlyAttributes'],
+          frontmatter: [
+            'json-loader',
+            'front-matter-loader?{"onlyAttributes":true}',
+          ],
           raw: 'raw-loader',
         },
       },

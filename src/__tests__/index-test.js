@@ -4,7 +4,7 @@ describe('combine-loader', () => {
   it('returns the correct module content', () => {
     const context = {
       cacheable: jest.fn(),
-      query: `?${JSON.stringify({
+      getOptions: jest.fn(() => ({
         raw: 'raw-loader',
         frontmatter: ['json-loader', 'front-matter-loader?onlyAttributes'],
         content: [
@@ -12,7 +12,7 @@ describe('combine-loader', () => {
           'markdown-it-loader',
           'front-matter-loader?onlyBody',
         ],
-      })}`,
+      })),
     };
     const result = combineLoader.pitch.call(context, './path/to/example.md');
 
