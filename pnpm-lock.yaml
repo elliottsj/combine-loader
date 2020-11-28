@@ -9,7 +9,7 @@ devDependencies:
   json-loader: 0.5.7
   markdown-it: 12.0.2
   markdown-it-loader: 0.7.0_cec628da997e4d282e5594b5d8a743c9
-  prettier: 2.2.0
+  prettier: 2.2.1
   raw-loader: 4.0.2_webpack@5.5.1
   webpack: 5.5.1
 lockfileVersion: 5.2
@@ -3665,13 +3665,13 @@ packages:
       node: '>= 0.8.0'
     resolution:
       integrity: sha1-IZMqVJ9eUv/ZqCf1cOBL5iqX2lQ=
-  /prettier/2.2.0:
+  /prettier/2.2.1:
     dev: true
     engines:
       node: '>=10.13.0'
     hasBin: true
     resolution:
-      integrity: sha512-yYerpkvseM4iKD/BXLYUkQV5aKt4tQPqaGW6EsZjzyu0r7sVZZNPJW4Y8MyKmicp6t42XUPcBVA+H6sB3gqndw==
+      integrity: sha512-PqyhM2yCjg/oKkFPtTGUojv7gnZAoG80ttl45O6x2Ug/rMJw4wcc9k6aaf2hibP7BGVCCM33gZoGjyvt9mm16Q==
   /pretty-format/26.6.2:
     dependencies:
       '@jest/types': 26.6.2
@@ -4795,6 +4795,6 @@ specifiers:
   loader-utils: 2.0.0
   markdown-it: 12.0.2
   markdown-it-loader: 0.7.0
-  prettier: 2.2.0
+  prettier: 2.2.1
   raw-loader: 4.0.2
   webpack: 5.5.1
