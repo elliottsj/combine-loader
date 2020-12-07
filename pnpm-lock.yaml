@@ -7,8 +7,8 @@ devDependencies:
   html-loader: 1.3.2_webpack@5.9.0
   jest: 26.6.3
   json-loader: 0.5.7
-  markdown-it: 12.0.2
-  markdown-it-loader: 0.7.0_cae9db72f47316ae8f8f02573fc8032c
+  markdown-it: 12.0.3
+  markdown-it-loader: 0.7.0_6f055d5d60df93f6158b96e9c60b8be6
   prettier: 2.2.1
   raw-loader: 4.0.2_webpack@5.9.0
   webpack: 5.9.0
@@ -1625,10 +1625,6 @@ packages:
       node: '>=10.13.0'
     resolution:
       integrity: sha512-G1XD3MRGrGfNcf6Hg0LVZG7GIKcYkbfHa5QMxt1HDUTdYoXH0JR1xXyg+MaKLF73E9A27uWNVxvFivNRYeUB6w==
-  /entities/2.0.3:
-    dev: true
-    resolution:
-      integrity: sha512-MyoZ0jgnLvB2X3Lg5HqpFmn1kybDiIfEQmKzTb5apr51Rb+T3KdmMiqa70T+bhGnyv7bQ6WMj2QMHpGMmlrUYQ==
   /entities/2.1.0:
     dev: true
     resolution:
@@ -3200,28 +3196,28 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha1-7Nyo8TFE5mDxtb1B8S80edmN+48=
-  /markdown-it-loader/0.7.0_cae9db72f47316ae8f8f02573fc8032c:
+  /markdown-it-loader/0.7.0_6f055d5d60df93f6158b96e9c60b8be6:
     dependencies:
       highlight.js: 10.4.1
       loader-utils: 1.4.0
-      markdown-it: 12.0.2
+      markdown-it: 12.0.3
     dev: true
     peerDependencies:
       highlight.js: '>=8.0.0'
       markdown-it: '>=5.0.0'
     resolution:
       integrity: sha512-PkNIDEYgaNx/In9GJRsxPbO+9zdCJNVPRBdp394oLSW9GdegYrskbQjh1KfHDc1Ti/COqC+4p+jZBs+5qG+cvg==
-  /markdown-it/12.0.2:
+  /markdown-it/12.0.3:
     dependencies:
       argparse: 2.0.1
-      entities: 2.0.3
+      entities: 2.1.0
       linkify-it: 3.0.2
       mdurl: 1.0.1
       uc.micro: 1.0.6
     dev: true
     hasBin: true
     resolution:
-      integrity: sha512-4Lkvjbv2kK+moL9TbeV+6/NHx+1Q+R/NIdUlFlkqkkzUcTod4uiyTJRiBidKR9qXSdkNFkgv+AELY8KN9vSgVA==
+      integrity: sha512-M57RsMv+QQmJHz1yCu0gTJRMx/LlxRPtrrw+2kb/CpDVK/graCmWO0qfNnz/SE1FCNdyq3pkMMZ+itTnyT/YGA==
   /mdurl/1.0.1:
     dev: true
     resolution:
@@ -4793,7 +4789,7 @@ specifiers:
   jest: 26.6.3
   json-loader: 0.5.7
   loader-utils: 2.0.0
-  markdown-it: 12.0.2
+  markdown-it: 12.0.3
   markdown-it-loader: 0.7.0
   prettier: 2.2.1
   raw-loader: 4.0.2
