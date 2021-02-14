@@ -18,7 +18,7 @@ module.exports = {
         loader: combineLoader,
         options: {
           content: [
-            'html-loader',
+            'html-loader?{"esModule":false}',
             'markdown-it-loader',
             'front-matter-loader?{"onlyBody":true}',
           ],
