@@ -29,7 +29,7 @@
     "loader-utils": "2.0.4"
   },
   "devDependencies": {
-    "del-cli": "3.0.1",
+    "del-cli": "5.1.0",
     "front-matter-loader": "2.0.0",
     "highlight.js": "10.7.3",
     "html-loader": "2.1.2",
